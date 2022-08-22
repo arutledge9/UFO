@@ -10,7 +10,7 @@ Hello, Dana! I hope you'll be as excited for our latest website draft as I am. O
 
 ![](/Resources/default_view.PNG)
 
-now with fields for users to search for specific dates of sightings and city, state, and country location, as well as specific UFO shapes. We have a placeholder date of "1/10/2010" appear that does not affect any data, but once a date is entered as a search criteron, then our filters activate. 
+now with fields for users to search for specific dates of sightings and city, state, and country location, as well as specific UFO shapes. We have a placeholder date of "1/10/2010" appear that does not affect any data, but once a date is entered as a search criteron and a user tabs to or manually clicks into another field, then our filters activate. 
 
 ![](/Resources/filter_date.PNG)
 
@@ -40,3 +40,5 @@ I hope that these examples illustrate just how easy it's becoming to navigate ou
 ## Summary
 
 I was so focused on making our search fields operate properly that it wasn't until late in the project when I realized *everything* in the data tables is written in lower case, and in some instances, being loaded with incorrect formatting! One improvement I'd suggest implementing is coding an ETL function(s) on the raw data itself so it just looks *professional* to any site visitor. Along with this function, I also would suggest transforming the data field from the raw data to an mmddyyyy date format.  
+
+One aspect of our former design that really "popped" for me was the button we clicked to filter by an entered date. I probably sound a little silly, but it was kind of fun to click it and watch the data sort itself out. But more importantly, it was an obvious pull-in/draw for a *user* to go "oh hey, *clicking this* is how I narrow down all of this data." We really don't have anything like that with our new version - it's not intuitive that a user needs to enter a value in the search box and then *tab out or click out.* So with this downside in mind, a final improvement would be to filter the data as a person types, if that's at all possible - plus a change like this would just have that "pop" factor too!  
