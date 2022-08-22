@@ -39,4 +39,4 @@ I hope that these examples illustrate just how easy it's becoming to navigate ou
 
 ## Summary
 
-Summary: In a summary statement, describe one drawback of this new design and two recommendations for further development.
+I was so focused on making our search fields operate properly that it wasn't until late in the project when I realized *everything* in the data tables is written in lower case, and in some instances, being loaded with incorrect formatting! One improvement I'd suggest implementing is coding an ETL function(s) on the raw data itself so it just looks *professional* to any site visitor. Along with this function, I also would suggest transforming the data field from the raw data to an mmddyyyy date format.  
